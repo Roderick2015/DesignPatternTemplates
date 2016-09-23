@@ -1,0 +1,1 @@
+设计模式相关实例代码，配套帖子地址 http://blog.csdn.net/roderick2015
