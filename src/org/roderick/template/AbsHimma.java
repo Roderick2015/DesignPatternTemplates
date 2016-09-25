@@ -26,12 +26,16 @@ public abstract class AbsHimma implements Himma {
         sign();
         receiveTask(task);
         doWork();
-        if (this.payFlag) getPay(this.money);
+        if (this.payFlag) getPay(getMoney());
         if (hasEmotion()) releaseEmotion();
     }
 
     public void setMoney(double money) {
         this.money = money;
+    }
+
+    public double getMoney() {
+        return this.money;
     }
 
     @Override
