@@ -15,6 +15,7 @@ public class Task {
      */
     public void increment() {
         current++;
+        System.out.println("当前任务进度：" + getProgress());
     }
 
     /**
