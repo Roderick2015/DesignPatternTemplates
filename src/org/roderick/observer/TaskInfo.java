@@ -3,9 +3,11 @@ package org.roderick.observer;
 /**
  * 任务实体类
  */
-public class Task {
+public class TaskInfo {
     private String name; //任务名称
     private String description; //任务描述
+    private String monsterName; //任务怪名称
+
     private int current = 0; //已kill的怪物数量，这里给个默认值
     private int total; //需要kill的怪物数量（用于监听任务的进度）
 
@@ -15,7 +17,7 @@ public class Task {
      */
     public void increment() {
         current++;
-        System.out.println("当前任务进度：" + getProgress());
+        System.out.println("任务进度：" + getProgress());
     }
 
     /**
@@ -62,5 +64,13 @@ public class Task {
 
     public void setTotal(int total) {
         this.total = total;
+    }
+
+    public String getMonsterName() {
+        return monsterName;
+    }
+
+    public void setMonsterName(String monsterName) {
+        this.monsterName = monsterName;
     }
 }

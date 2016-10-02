@@ -12,7 +12,7 @@ public class LaoWang {
      */
     public void beAttacked(int damage) {
         this.blood = damage > this.blood ? 0 : (this.blood - damage);
-        System.out.println("怪物失去" + damage + "点生命值，剩余血量" + this.blood);
+        System.out.println(this.name + "失去" + damage + "点生命值，剩余血量" + this.blood);
     }
 
     /**
